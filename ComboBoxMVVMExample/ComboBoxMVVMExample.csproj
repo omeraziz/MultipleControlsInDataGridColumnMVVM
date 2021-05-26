@@ -54,11 +54,16 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\ExampleModel.cs" />
+    <Compile Include="ViewModel\DepartmentJobComboboValueConverter.cs" />
     <Compile Include="ViewModel\ExampleViewModel.cs" />
+    <Compile Include="ViewModel\TimeSheetsViewModel.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\ComboBox.xaml.cs">
       <DependentUpon>ComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TimesheetView.xaml.cs">
+      <DependentUpon>TimesheetView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -73,6 +78,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TimesheetView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

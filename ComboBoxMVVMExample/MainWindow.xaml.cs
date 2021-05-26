@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComboBoxMVVMExample.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,11 @@ namespace ComboBoxMVVMExample
 
             // MVVM Instantiation
             //DataContext = new ComboBoxMVVMExample.ViewModel.ExampleViewModel();
+        }
+
+        private void BtnMetadata_Click(object sender, RoutedEventArgs e)
+        {
+            new TimesheetView().ShowDialog();
         }
     }
 }
