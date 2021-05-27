@@ -14,7 +14,10 @@
             <TextBlock Text=" "/>
             <Button Content="Show Metadata Window" x:Name="BtnMetadata" Click="BtnMetadata_Click"/>
             <TextBlock Text=" "/>
-            <Button Content="Show Multiple controls in One Column of DataGrid" x:Name="BtnHetrogeneousGrid" Click="BtnHetrogeneousGrid_Click"/>
+            <Button Content="Show Dynamic UI Elements in DataGrid" x:Name="BtnHetrogeneousGrid" Click="BtnHetrogeneousGrid_Click"/>
+            <TextBlock Text=" "/>
+            <Button Content="Show Cascading ComboBoxes with CheckBox, TextBox in DataGrid" x:Name="BtnDynamicCascadingComboInGrid" Click="BtnDynamicCascadingComboInGrid_Click" />
+            
         </StackPanel>
     </Grid>
 

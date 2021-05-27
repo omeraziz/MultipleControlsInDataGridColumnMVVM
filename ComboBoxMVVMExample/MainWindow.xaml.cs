@@ -40,5 +40,10 @@ namespace ComboBoxMVVMExample
 
             new DynamicDataView().ShowDialog();
         }
+
+        private void BtnDynamicCascadingComboInGrid_Click(object sender, RoutedEventArgs e)
+        {
+            new DynamicCascadingComboInGridView().ShowDialog();
+        }
     }
 }

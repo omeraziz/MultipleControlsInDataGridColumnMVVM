@@ -13,15 +13,15 @@
         <vm:DepartmentJobComboboValueConverter x:Key="DepartmentJobComboboValueConverter" />
         <!--<vm:TimeSheetsViewModel x:Key="TimeSheetsViewModel"/>-->
     </Window.Resources>
-    
+
     <Window.DataContext>
-        <vm:TimeSheetsViewModel/>
+        <vm:TimeSheetsViewModel />
     </Window.DataContext>
-    
+
     <Grid>
         <DataGrid MinWidth="300" MinHeight="400" AutoGenerateColumns="False" ItemsSource="{Binding Times}" SelectionMode="Single">
             <DataGrid.Columns>
-                
+
                 <DataGridTemplateColumn Header="Department">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -30,19 +30,22 @@
                     </DataGridTemplateColumn.CellTemplate>
                     <DataGridTemplateColumn.CellEditingTemplate>
                         <DataTemplate>
-                            <ComboBox DisplayMemberPath="DepartmentCode" ItemsSource="{Binding RelativeSource={RelativeSource Findancestor, AncestorType={x:Type Window}}, Path=DataContext.Departments, UpdateSourceTrigger=PropertyChanged}" SelectedValue="{Binding Department.DepartmentCode}" SelectedValuePath="DepartmentCode" />
+                            <ComboBox DisplayMemberPath="DepartmentCode" 
+                                      ItemsSource="{Binding RelativeSource={RelativeSource Findancestor, AncestorType={x:Type Window}}, Path=DataContext.Departments, UpdateSourceTrigger=PropertyChanged}" 
+                                      SelectedValue="{Binding Department.DepartmentCode}" 
+                                      SelectedValuePath="DepartmentCode" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellEditingTemplate>
                 </DataGridTemplateColumn>
-                
+
                 <DataGridTemplateColumn Header="Job code">
-                    
+
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding Path=Job}" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
-                    
+
                     <DataGridTemplateColumn.CellEditingTemplate>
                         <DataTemplate>
                             <ComboBox SelectedValue="{Binding Job}">

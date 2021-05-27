@@ -25,4 +25,22 @@ namespace ComboBoxMVVMExample.ViewModel
             return null;
         }
     }
+
+    public class DynamicCascadingComboInGridTemplateSelector : DataTemplateSelector
+    {
+        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+        {
+            FrameworkElement element = container as FrameworkElement;
+
+            if (element != null && item != null /* && item is Task*/)
+            {
+                DynamicCascadingComboInGridModel model = item as DynamicCascadingComboInGridModel;
+
+                return (DataTemplate)element.FindResource(model.DisplayAs + "Template");
+            }
+
+            return null;
+        }
+    }
+
 }
