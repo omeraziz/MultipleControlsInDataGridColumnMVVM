@@ -53,14 +53,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\DynamicDataModel.cs" />
     <Compile Include="Model\ExampleModel.cs" />
     <Compile Include="ViewModel\DepartmentJobComboboValueConverter.cs" />
+    <Compile Include="ViewModel\DynamicDataTemplateSelector.cs" />
+    <Compile Include="ViewModel\DynamicDataViewModel.cs" />
     <Compile Include="ViewModel\ExampleViewModel.cs" />
     <Compile Include="ViewModel\TimeSheetsViewModel.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\ComboBox.xaml.cs">
       <DependentUpon>ComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DynamicDataView.xaml.cs">
+      <DependentUpon>DynamicDataView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\TimesheetView.xaml.cs">
       <DependentUpon>TimesheetView.xaml</DependentUpon>
@@ -78,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DynamicDataView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

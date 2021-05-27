@@ -33,5 +33,12 @@ namespace ComboBoxMVVMExample
         {
             new TimesheetView().ShowDialog();
         }
+
+        private void BtnHetrogeneousGrid_Click(object sender, RoutedEventArgs e)
+        {
+            // https://stackoverflow.com/questions/18154839/wpf-datagrid-with-different-usercontrol-in-each-cell
+
+            new DynamicDataView().ShowDialog();
+        }
     }
 }

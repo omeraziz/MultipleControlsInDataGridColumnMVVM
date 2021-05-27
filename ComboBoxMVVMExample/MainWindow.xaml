@@ -13,6 +13,8 @@
             <view:ComboBox />
             <TextBlock Text=" "/>
             <Button Content="Show Metadata Window" x:Name="BtnMetadata" Click="BtnMetadata_Click"/>
+            <TextBlock Text=" "/>
+            <Button Content="Show Multiple controls in One Column of DataGrid" x:Name="BtnHetrogeneousGrid" Click="BtnHetrogeneousGrid_Click"/>
         </StackPanel>
     </Grid>
 
