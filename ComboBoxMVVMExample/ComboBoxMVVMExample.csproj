@@ -58,6 +58,8 @@
     <Compile Include="Model\DynamicDataModel.cs" />
     <Compile Include="Model\ExampleModel.cs" />
     <Compile Include="ViewModel\DepartmentJobComboboValueConverter.cs" />
+    <Compile Include="ViewModel\TestModel.cs" />
+    <Compile Include="ViewModel\TestViewModel.cs" />
     <Compile Include="ViewModel\DynamicCascadingComboInGridViewModel.cs" />
     <Compile Include="ViewModel\DynamicDataTemplateSelector.cs" />
     <Compile Include="ViewModel\DynamicDataViewModel.cs" />
@@ -73,6 +75,9 @@
     </Compile>
     <Compile Include="View\DynamicDataView.xaml.cs">
       <DependentUpon>DynamicDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TestWindow.xaml.cs">
+      <DependentUpon>TestWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\TimesheetView.xaml.cs">
       <DependentUpon>TimesheetView.xaml</DependentUpon>
@@ -98,6 +103,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\DynamicDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

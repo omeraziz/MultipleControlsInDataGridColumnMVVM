@@ -311,7 +311,7 @@ namespace ComboBoxMVVMExample.Model
                 case "Uruguay":
                     return UruguayCityNames.ToList();
 
-                case "USA":
+                case "United States":
                     return USACityNames.ToList();
 
                 case "Uzbekistan":
@@ -354,7 +354,7 @@ namespace ComboBoxMVVMExample.Model
         {
             switch (countryName)
             {
-                case "USA":
+                case "United States":
                     return AmericaStatesNames.ToList();
 
                 case "Australia":
@@ -363,6 +363,9 @@ namespace ComboBoxMVVMExample.Model
                 case "Canada":
                     return CanadaStatesNames.ToList();
 
+                case "Pakistan":
+                    return PakistanStatesNames.ToList();
+
                 default:
                     return new List<string>();
             }
@@ -370,7 +373,7 @@ namespace ComboBoxMVVMExample.Model
 
         public static string[] CountryNames = new string[]
         {
-            "USA",
+        "United States",
         "Argentina",
         "Australia",
         "Austria",
@@ -469,7 +472,7 @@ namespace ComboBoxMVVMExample.Model
         "United Arab Emirates",
         "United Kingdom",
         "Uruguay",
-        //"USA",
+        //"United States",
         "Uzbekistan",
         "Venezuela",
         "Vietnam",
@@ -511,6 +514,17 @@ namespace ComboBoxMVVMExample.Model
             "Quebec",
             "Saskatchewan",
             "Yukon Territories"
+        };
+
+        public static string[] PakistanStatesNames = new string[]
+        {
+            "Azad Kashmir",
+            "Balochistan",
+            "Capital Territory",
+            "Gilgit Baltistan",
+            "Khyber Pakhtunkhwa",
+            "Punjab",
+            "Sindh"
         };
 
         public static string[] AmericaStatesNames = new string[]
@@ -935,7 +949,10 @@ namespace ComboBoxMVVMExample.Model
 
         public static string[] PakistanCityNames = new string[]
         {
-            "Hyderabad","Islamabad","Karachi","Lahore"
+            "Abbottabad","Bahawalpur","Dadu","Dera Ghazi Khan","Faisalabad","Gujranwala","Gujrat","Islamabad","Jacobabad","Jhang",
+            "Jhelum","Karachi","Kasur","Khanpur","Kohat","Lahore","Larkana","Mandi Bahauddin","Mardan","Mingaora","Mirpur","Mirpur Khas",
+            "Multan","Muridke","Muzaffarabbad","Muzaffargarh","Nawabshah","Mirpur","Nowshera","Okara","Pakpattan","Peshawar","Quetta",
+            "Rahimyar Khan","Rawalpindi","Saddiqabad","Sahiwal","Saidu Sharif","Sargodha","Shekhupura","Sialkot City","Sukkur","Swabi"
         };
 
         public static string[] PalestineCityNames = new string[]
